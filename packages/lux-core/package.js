@@ -1,22 +1,14 @@
 Package.describe({
   name: 'lux-core',
   version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
+  summary: 'Lux Core provides main features to be used when creating a dashboard.',
+  git: 'https://github.com/g33kidd/lux-core',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('lux-core.js');
-});
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('lux-core');
-  api.addFiles('lux-core-tests.js');
+  api.addFiles(['lib/main.js'], 'server');
+  api.addFiles('lux-core.js');
 });
