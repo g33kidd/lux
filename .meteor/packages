@@ -9,3 +9,9 @@ autopublish
 insecure
 lux-core
 iron:router
+coffeescript
+lux-analytics
+accounts-google
+accounts-base
+accounts-password
+service-configuration

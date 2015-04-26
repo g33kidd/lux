@@ -9,6 +9,10 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
+  api.use('lux-analytics@0.0.1', 'server');
+
   api.addFiles(['lib/main.js'], 'server');
   api.addFiles('lux-core.js');
+
+  api.export('Lux', ['server']);
 });
